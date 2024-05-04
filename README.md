@@ -1,1 +1,1 @@
-This is my exercise in python AL of thay Viet Nguyen AI cource, he works in Berlin, Germany
+This is my exercise in python for AL of thay Viet Nguyen AI course, he works in Berlin, Germany
