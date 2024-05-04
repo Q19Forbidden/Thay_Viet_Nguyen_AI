@@ -59,6 +59,27 @@ def strongest_neighbour(data_list):
 # Ex4: print all Possible Combinations from the three Digits
 data4 = [1, 2, 3]
 
+# n digit
+def combination_three_number(data4):
+    k = 1 # shitf 1 each time
+    n = 3
+    j = n - k # devide array input become to 2 array and combinator 2 array like mirror
+    data = []
+    x = data4
+    for i in range(3):
+        x = data4[j:] + data4[:j]
+        # x = +x.join('')
+        y = ''
+        for a in x:
+            y += str(a)
+        data.append(y)
+        # if you want to return a array, use  allow this line of code:
+        # data.append(x)
+        data4 = x
+
+    return data
+
+
 # Ex5: Given two matrices (2 nested lists), the task is to write a Python program
 # to add elements to each row from initial matrix.
 # For example: Input : test_list1 = [[4, 3, 5,], [1, 2, 3], [3, 7, 4]], test_list2 = [[1], [9], [8]]
@@ -102,6 +123,9 @@ def main():
     print(strongest_neighbour(data3))
     # -------------------------------------------------------------------------
 
-
+    #--------------------------------------------------------------------------
+    #EX4: 
+    result = combination_three_number(data4)
+    print(result)
 
 main()
