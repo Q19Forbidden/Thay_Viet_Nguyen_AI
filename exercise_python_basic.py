@@ -87,6 +87,15 @@ def combination_three_number(data4):
 data5_list1 = [[4, 3, 5, ], [1, 2, 3], [3, 7, 4]]
 data5_list2 = [[1, 3], [9, 3, 5, 7], [8]]
 
+def matrix_additional(list1, list2):
+    n = len(list1)
+    for i in range(n+1):
+        list3 = [0] * n
+        print(list1[i])
+        print(list2[i])
+        list3[i] = list1[i] + list2(i)
+    return list1
+
 # Ex6:  Write a program which will find all such numbers which are divisible by 7
 # but are not a multiple of 5, between 2000 and 3200 (both included).
 # The numbers obtained should be printed in a comma-separated sequence on a single line.
@@ -128,5 +137,11 @@ def main():
     print("Ex4: print all Possible Combinations from the three Digits: ")
     result = combination_three_number(data4)
     print(result)
+
+    #-----------------------------------------------------------------------
+    #EX5:
+    print("add elements to each row from initial matrix:")
+    print(matrix_additional(data5_list1, data5_list2))
+    #------------------------------------------------------------------------
 
 main()
