@@ -137,6 +137,8 @@ def main():
     print("Ex4: print all Possible Combinations from the three Digits: ")
     result = combination_three_number(data4)
     print(result)
+    #-----------------------------------------------------------------------
+    
 
     #-----------------------------------------------------------------------
     #EX5:
